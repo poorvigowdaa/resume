@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: background 0.5s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #fff;  /* Adding border to buttons */
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Active State for Navigation Links */
+nav ul li a.active {
+    background-color: #0073e6; /* Blue color when active */
+    border-color: #0073e6; /* Match the border with active background */
+    transform: translateY(0); /* Reset the hover effect */
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    margin: 1.5rem auto;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #444;
+    border-bottom: 3px solid #1e90ff;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #0073e6;
+}
+
+/* Paragraph & List Styles */
+p, ul {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+ul li:nth-child(odd) {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Link Styles */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0073e6;
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Dark Mode Toggle */
+button.dark-mode-toggle {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button.dark-mode-toggle:hover {
+    background-color: #005bb5;
+}
